@@ -1,0 +1,17 @@
+.form {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 360px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: red;
+}

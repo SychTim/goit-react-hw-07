@@ -1,0 +1,14 @@
+.card {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    gap: 20px;
+
+    display: flex;
+}
+
+.icon {
+    margin-right: 5px;
+    transform: translateY(2px);
+}
