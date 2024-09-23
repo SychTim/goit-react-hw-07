@@ -49,14 +49,7 @@ const slice = createSlice({
 
 export default slice.reducer;
 
-export const selectContacts = (state) => {
-  try {
-    return state.contacts.items;
-  } catch(error) {
-    console.log(error);
-  }
-  
-};
+export const selectContacts = (state) => state.contacts.items;
 
 export const selectLoading = (state) => state.contacts.loading;
 
