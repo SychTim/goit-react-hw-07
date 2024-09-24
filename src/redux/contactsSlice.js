@@ -49,14 +49,7 @@ const slice = createSlice({
 
 export default slice.reducer;
 
-export const selectContacts = (state) => {
-  try {
-    return state.contacts.items;
-  } catch(error) {
-    console.log(error);
-  }
-  
-};
+export const selectContacts = (state) => state.contacts.items;
 
 export const selectLoading = (state) => state.contacts.loading;
 
@@ -66,7 +59,7 @@ export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilter],
   (contacts, filter) => {
     return contacts.filter((contact) =>
-      contact.toLowerCase().includes(filter.toLowerCase())
+      contact.name.toLowerCase().includes(filter.toLowerCase())
     );
   }
 );
